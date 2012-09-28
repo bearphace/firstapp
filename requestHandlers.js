@@ -28,7 +28,7 @@ function upload(response, request) {
   console.log("Request handler 'upload' was called. ");
 
   var form = new formidable.IncomingForm();
-  console.log("about to parse");
+  console.log("about to parse = "+request);
   form.parse(request, function (error, fields, files ){
   		console.log ("parsing done");
 
